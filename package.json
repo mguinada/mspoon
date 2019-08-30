@@ -2,6 +2,10 @@
   "name": "mspoon",
   "version": "0.1.0",
   "private": true,
+  "api": {
+    "spaceId": "kk2bw5ojx476",
+    "accessToken": "7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -10,6 +14,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "contentful": "^7.9.1",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"
@@ -94,6 +99,12 @@
     "watchPlugins": [
       "jest-watch-typeahead/filename",
       "jest-watch-typeahead/testname"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,vue}",
+      "!src/main.js",
+      "!src/router.js"
     ]
   }
 }
