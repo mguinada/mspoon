@@ -8,6 +8,10 @@ describe('api', () => {
       client.getEntries = jest.fn(() => Promise.resolve(fakeRecipes));
     });
 
+    afterEach(() => {
+      jest.clearAllMocks();
+    });
+
     it('fetches recipes', async () => {
       expect(await api.recipes()).toEqual(fakeRecipes.items);
       expect(client.getEntries).toHaveBeenCalledTimes(1);

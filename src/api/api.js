@@ -1,15 +1,15 @@
-import client from './client.js';
+import client from './client.js'
 
-var filterData = function(clientOperation, property = 'items') {
+var extrude = function (property, promise) {
   return new Promise((resolve) => {
-     clientOperation.then((response) => {
-       resolve(response[property]);
-     });
-   });
+    promise.then((response) => {
+      resolve(response[property])
+    })
+  })
 }
 
 export default {
-  recipes() {
-    return filterData(client.getEntries({content_type: 'recipe'}));
+  recipes () {
+    return extrude('items', client.getEntries({ content_type: 'recipe' }))
   }
 }
