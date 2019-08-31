@@ -46,5 +46,16 @@ export default {
         height: 368px;
       }
     }
+
+    a.detail {
+      color: #2c3e50;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:visited {
+        color: inherit;
+      }
+    }
   }
 </style>
