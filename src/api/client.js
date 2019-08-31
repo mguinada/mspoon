@@ -1,5 +1,5 @@
-import { api } from '../../package.json';
-import { createClient } from 'contentful';
+import { api } from '../../package.json'
+import { createClient } from 'contentful'
 
 const client = createClient({
   accessToken: api.accessToken,

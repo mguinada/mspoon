@@ -8,7 +8,7 @@ module.exports = {
       .assert.containsText('.recipes', 'Tofu Saag Paneer with Buttery Toasted Pita')
       .assert.containsText('.recipes', 'Grilled Steak & Vegetables with Cilantro-Jalapeño Dressing')
       .assert.elementCount('img[src^="//images.ctfassets.net/"]', 4)
-      .end();
+      .end()
   },
   'Visit a recipe detail': (browser) => {
     browser
@@ -23,6 +23,6 @@ module.exports = {
       .assert.containsText('.tags', 'gluten free')
       .assert.containsText('.tags', 'healthy')
       .assert.elementCount('img[src^="//images.ctfassets.net/"]', 1)
-      .end();
+      .end()
   },
-};
+}

@@ -1,6 +1,6 @@
 import client from './client.js'
 
-var extrude = function (property, promise) {
+let extrude = function (property, promise) {
   return new Promise((resolve) => {
     promise.then((response) => {
       resolve(response[property])

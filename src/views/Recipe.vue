@@ -33,11 +33,3 @@ export default {
   }
 }
 </script>
-
-<style lang='scss' scoped>
-  .recipes {
-    ul {
-      list-style: none;
-    }
-  }
-</style>

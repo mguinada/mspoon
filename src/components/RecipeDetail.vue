@@ -7,7 +7,9 @@
     <ul class='tags'>
       <li class='tag' v-for='tag in tags' :key='tag'>{{ tag }}</li>
     </ul>
-    <p class='description'><vue-simple-markdown :source='description'></vue-simple-markdown></p>
+    <p class='description'>
+      <vue-simple-markdown :source='description'></vue-simple-markdown>
+    </p>
     <p v-show='chef' class='chef'>by <span>{{ chef }}</span></p>
   </div>
 </template>
@@ -35,7 +37,7 @@ export default {
       if (this.recipe.fields.chef) {
         return this.recipe.fields.chef.fields.name
       } else {
-        return null;
+        return null
       }
     },
     tags () {

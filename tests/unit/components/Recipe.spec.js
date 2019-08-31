@@ -1,8 +1,8 @@
-import { mount } from "@vue/test-utils";
-import Recipe from '@/components/Recipe.vue';
+import { mount } from "@vue/test-utils"
+import Recipe from '@/components/Recipe.vue'
 
 describe('Recipe.vue', () => {
-  let component;
+  let component
 
   beforeEach(() => {
     component = mount(
@@ -31,7 +31,7 @@ describe('Recipe.vue', () => {
   })
 
   it('Renders the recipe', () => {
-    expect(component.html()).toContain(`<p class=\"title\">Bacon &amp; eggs</p>`);
-    expect(component.html()).toContain(`<img src="https://cdn.example.org/bacon-and-eggs.png">`);
-  });
-});
+    expect(component.html()).toContain(`<p class=\"title\">Bacon &amp; eggs</p>`)
+    expect(component.html()).toContain(`<img src="https://cdn.example.org/bacon-and-eggs.png">`)
+  })
+})
