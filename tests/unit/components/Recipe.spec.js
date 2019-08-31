@@ -1,6 +1,4 @@
 import { mount } from "@vue/test-utils";
-import { fakeRecipes } from '../../data/fakeData';
-import api from '@/api/api.js'
 import Recipe from '@/components/Recipe.vue';
 
 describe('Recipe.vue', () => {
@@ -12,7 +10,9 @@ describe('Recipe.vue', () => {
       {
         propsData: {
           recipe: {
-            sys: {id: '1'},
+            sys: {
+              id: '1'
+            },
             fields: {
               title: 'Bacon & eggs',
               photo: {

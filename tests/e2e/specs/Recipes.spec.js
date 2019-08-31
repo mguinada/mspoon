@@ -1,5 +1,5 @@
 module.exports = {
-  'Visit home page': (browser) => {
+  'Visit the recipe list': (browser) => {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('.recipe', 5000)
@@ -7,7 +7,7 @@ module.exports = {
       .assert.containsText('.recipes', 'White Cheddar Grilled Cheese with Cherry Preserves & Basil')
       .assert.containsText('.recipes', 'Tofu Saag Paneer with Buttery Toasted Pita')
       .assert.containsText('.recipes', 'Grilled Steak & Vegetables with Cilantro-Jalapeño Dressing')
-      .assert.elementCount('img', 4)
+      .assert.elementCount('img[src^="//images.ctfassets.net/"]', 4)
       .end();
   },
 };

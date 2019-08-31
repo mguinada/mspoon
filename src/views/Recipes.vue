@@ -26,11 +26,8 @@ export default {
   methods: {
     async fetchRecipes () {
       api.recipes()
-        .then(
-          (response) => { this.recipes = response }
-        ).catch(
-          (error) => { console.error(error) }
-        )
+        .then((response) => { this.recipes = response })
+        .catch((error) => { console.error(error) })
     }
   },
   mounted () {
