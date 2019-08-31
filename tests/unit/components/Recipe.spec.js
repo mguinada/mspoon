@@ -4,8 +4,10 @@ import api from '@/api/api.js'
 import Recipe from '@/components/Recipe.vue';
 
 describe('Recipe.vue', () => {
-  it('Renders the recipe', () => {
-    const wrapper = mount(
+  let component;
+
+  beforeEach(() => {
+    component = mount(
       Recipe,
       {
         propsData: {
@@ -25,8 +27,10 @@ describe('Recipe.vue', () => {
         }
       }
     )
+  })
 
-    expect(wrapper.html()).toContain(`<p class=\"title\">Bacon &amp; eggs</p>`);
-    expect(wrapper.html()).toContain(`<img src="https://cdn.example.org/bacon-and-eggs.png">`);
+  it('Renders the recipe', () => {
+    expect(component.html()).toContain(`<p class=\"title\">Bacon &amp; eggs</p>`);
+    expect(component.html()).toContain(`<img src="https://cdn.example.org/bacon-and-eggs.png">`);
   });
 });

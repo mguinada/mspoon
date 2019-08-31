@@ -4,18 +4,24 @@ import { fakeRecipes } from '../../data/fakeData';
 
 describe('api', () => {
   describe('recipes', () => {
-    beforeEach(() => {
-      client.getEntries = jest.fn(() => Promise.resolve(fakeRecipes));
+    let recipes;
+
+    beforeEach(async () => {
+      client.getEntries = jest.fn(() => Promise.resolve(fakeRecipes))
+      recipes = await api.recipes()
     });
 
     afterEach(() => {
       jest.clearAllMocks();
     });
 
-    it('fetches recipes', async () => {
-      expect(await api.recipes()).toEqual(fakeRecipes.items);
-      expect(client.getEntries).toHaveBeenCalledTimes(1);
-      expect(client.getEntries).toHaveBeenCalledWith({content_type: 'recipe'});
+    it('calls contentful', () => {
+      expect(client.getEntries).toHaveBeenCalledTimes(1)
+      expect(client.getEntries).toHaveBeenCalledWith({content_type: 'recipe'})
+    })
+
+    it('fetches recipes', () => {
+      expect(recipes).toEqual(fakeRecipes.items)
     })
   });
 });
