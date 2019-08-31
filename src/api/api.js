@@ -8,8 +8,13 @@ var extrude = function (property, promise) {
   })
 }
 
+const entry = 'recipe'
+
 export default {
   recipes () {
-    return extrude('items', client.getEntries({ content_type: 'recipe' }))
+    return extrude('items', client.getEntries({ 'content_type': entry }))
+  },
+  recipe (id) {
+    return extrude('items', client.getEntries({ 'content_type': entry, 'sys.id': id }))
   }
 }

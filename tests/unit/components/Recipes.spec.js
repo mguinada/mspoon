@@ -22,7 +22,7 @@ describe('Recipes.vue', () => {
   });
 
   it('Renders the recipe list', async () => {
-    expect(component.html()).toContain(`<p class=\"title\">Crispy Chicken and Rice	with Peas &amp; Arugula Salad</p>`);
+    expect(component.html()).toContain(`<p class=\"title\">Crispy Chicken and Rice with Peas &amp; Arugula Salad</p>`);
     expect(component.html()).toContain(`<p class=\"title\">White Cheddar Grilled Cheese with Cherry Preserves &amp; Basil</p>`)
     expect(component.html()).toContain(`<p class=\"title\">Tofu Saag Paneer with Buttery Toasted Pita</p>`);
     expect(component.html()).toContain(`<p class=\"title\">Grilled Steak &amp; Vegetables with Cilantro-Jalapeño Dressing</p>`)

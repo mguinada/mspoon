@@ -1,12 +1,12 @@
 <template lang='html'>
   <div class='recipes'>
-  <h1>Recipes</h1>
-  <ul>
-    <li v-for='recipe in recipes' :key='recipe.sys.id'>
-      <Recipe :recipe='recipe'/>
-    </li>
-  </ul>
-</div>
+    <h1>Recipes</h1>
+    <ul>
+      <li v-for='recipe in recipes' :key='recipe.sys.id'>
+        <Recipe :recipe='recipe'/>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
