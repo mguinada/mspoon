@@ -3,7 +3,7 @@
     <h1>Recipes</h1>
     <ul>
       <li v-for='recipe in recipes' :key='recipe.sys.id'>
-        <Recipe :recipe='recipe'/>
+        <recipe :recipe='recipe'/>
       </li>
     </ul>
   </div>
@@ -16,7 +16,7 @@ import Recipe from '@/components/Recipe.vue'
 export default {
   name: 'recipes',
   components: {
-    Recipe
+    recipe: Recipe
   },
   data () {
     return {

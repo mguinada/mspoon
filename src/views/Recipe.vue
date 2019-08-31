@@ -1,6 +1,6 @@
 <template lang='html'>
   <div class='recipe' v-if='recipe'>
-    <RecipeDetail :recipe='recipe'/>
+    <recipe-detail :recipe='recipe'/>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import RecipeDetail from '@/components/RecipeDetail.vue'
 export default {
   name: 'recipe',
   components: {
-    RecipeDetail
+    'recipe-detail': RecipeDetail
   },
   data () {
     return {
