@@ -42,14 +42,15 @@ describe('Recipe.vue', () => {
               }
             }
           }
-        }
+        },
+        stubs: ['vue-simple-markdown']
       }
     )
   })
 
   it('Renders the recipe detail', () => {
     expect(component.html()).toContain(`<p class=\"title\">Bacon &amp; eggs</p>`)
-    expect(component.html()).toContain(`<p class=\"description\">Lorem ipsum dolor sit amet...</p>`);
+    expect(component.html()).toContain(`<p class=\"description\"><vue-simple-markdown-stub source=\"Lorem ipsum dolor sit amet...\"></vue-simple-markdown-stub></p>`);
     expect(component.html()).toContain(`<li class=\"tag\">Breakfast</li>`)
     expect(component.html()).toContain(`<li class=\"tag\">Fast meal</li>`)
     expect(component.html()).toContain(`<p class=\"chef\">by <span>Jay Oliver</span></p></div>`)

@@ -19,7 +19,8 @@ describe('Recipe.vue', () => {
             name: 'recipe',
             params: { id: '437eO3ORCME46i02SeCW46' }
           }
-        }
+        },
+        stubs: ['vue-simple-markdown']
       }
     )
 
