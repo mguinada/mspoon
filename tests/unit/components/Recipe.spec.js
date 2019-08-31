@@ -8,6 +8,7 @@ describe('Recipe.vue', () => {
     component = mount(
       Recipe,
       {
+        stubs: ['router-link'],
         propsData: {
           recipe: {
             sys: {

@@ -44,7 +44,6 @@ describe('api', () => {
 
     it('fetches recipe', () => {
       expect(recipe).toEqual(fakeRecipe.items)
-      // expect(recipe).toEqual([])
     })
   })
 });

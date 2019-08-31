@@ -9,7 +9,7 @@ describe('Recipes.vue', () => {
 
   beforeEach(async () => {
     api.recipes = jest.fn(() => Promise.resolve(fakeRecipes.items))
-    view = mount(Recipes)
+    view = mount(Recipes, { stubs: ['router-link'] })
     await flushPromises();
   });
 

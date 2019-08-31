@@ -1,9 +1,11 @@
 <template lang='html'>
   <div class='recipe'>
-    <p class='title'>{{ title }}</p>
-    <div class='thumb'>
-      <img :src='image'>
-    </div>
+    <router-link :to="{ name: 'recipe', params: { id: id }}" class='detail'>
+      <p class='title'>{{ title }}</p>
+      <div class='thumb'>
+        <img :src='image'>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -17,6 +19,9 @@ export default {
     }
   },
   computed: {
+    id () {
+      return this.recipe.sys.id
+    },
     title () {
       return this.recipe.fields.title
     },
