@@ -17,7 +17,7 @@
           As the
           <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/" target="_blank" rel="noopener">Contentful's Delivery API</a>
           client with
-          <a href="https://www.contentful.com/developers/docs/concepts/links/" target="_blank" rel="noopener">link resulution support</a>
+          <a href="https://www.contentful.com/developers/docs/concepts/links/" target="_blank" rel="noopener">link resolution support</a>
         </span>
       </li>
       <li>
@@ -28,7 +28,7 @@
         </span>
       </li>
       <li>
-        <a href="https://cli.vuejs.org" target="_blank" rel="noopener">Vue UI</a>
+        <a href="https://cli.vuejs.org" target="_blank" rel="noopener">Vue CLI</a>
         <br/>
         <span>
           For project infrastrucure management
@@ -49,7 +49,7 @@
         </span>
         <br/>
         <span>
-          Configurted for <a href="https://standardjs.com">JavaScript Standard Style</a>
+          configured for <a href="https://standardjs.com">JavaScript Standard Style</a>
         </span>
       </li>
       <li>
