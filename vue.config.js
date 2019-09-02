@@ -1,7 +1,7 @@
 module.exports = {
-  configureWebpack:{
+  configureWebpack: {
     performance: {
-       hints: false
+      hints: false
     }
   }
 }

@@ -1,4 +1,4 @@
-import { mount } from "@vue/test-utils"
+import { mount } from '@vue/test-utils'
 import PageNotFound from '@/views/PageNotFound.vue'
 
 describe('PageNotFound.vue', () => {

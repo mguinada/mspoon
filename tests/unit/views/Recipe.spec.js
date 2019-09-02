@@ -1,5 +1,5 @@
 import flushPromises from 'flush-promises'
-import { mount } from "@vue/test-utils"
+import { mount } from '@vue/test-utils'
 import { fakeRecipe } from '../../data/fakeData'
 import api from '@/api/api.js'
 import Recipe from '@/views/Recipe.vue'

@@ -17,7 +17,7 @@ describe('api', () => {
 
     it('calls contentful', () => {
       expect(client.getEntries).toHaveBeenCalledTimes(1)
-      expect(client.getEntries).toHaveBeenCalledWith({'content_type': 'recipe'})
+      expect(client.getEntries).toHaveBeenCalledWith({ 'content_type': 'recipe' })
     })
 
     it('fetches recipes', () => {
@@ -39,7 +39,7 @@ describe('api', () => {
 
     it('calls contentful', () => {
       expect(client.getEntries).toHaveBeenCalledTimes(1)
-      expect(client.getEntries).toHaveBeenCalledWith({'content_type': 'recipe', 'sys.id': '437eO3ORCME46i02SeCW46' })
+      expect(client.getEntries).toHaveBeenCalledWith({ 'content_type': 'recipe', 'sys.id': '437eO3ORCME46i02SeCW46' })
     })
 
     it('fetches recipe', () => {

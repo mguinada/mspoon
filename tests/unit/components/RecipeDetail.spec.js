@@ -1,4 +1,4 @@
-import { mount } from "@vue/test-utils"
+import { mount } from '@vue/test-utils'
 import RecipeDetail from '@/components/RecipeDetail.vue'
 
 describe('Recipe.vue', () => {

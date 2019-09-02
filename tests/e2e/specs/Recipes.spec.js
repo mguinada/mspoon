@@ -24,5 +24,5 @@ module.exports = {
       .assert.containsText('.tags', 'healthy')
       .assert.elementCount('img[src^="//images.ctfassets.net/"]', 1)
       .end()
-  },
+  }
 }
