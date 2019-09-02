@@ -1,13 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import VueSimpleMarkdown from 'vue-simple-markdown'
-import PageNotFound from './views/PageNotFound.vue'
 import Recipes from './views/Recipes.vue'
 import Recipe from './views/Recipe.vue'
-import About from './views/About.vue'
 
 Vue.use(Router)
-Vue.use(VueSimpleMarkdown)
 
 export default new Router({
   mode: 'history',
@@ -26,12 +22,12 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: () => import('@/views/About.vue')
     },
     {
       path: '*',
       name: '404',
-      component: PageNotFound
+      component: () => import('@/views/PageNotFound.vue')
     }
   ]
 })
